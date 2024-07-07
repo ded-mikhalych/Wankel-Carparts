@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "f8b4c671-2239-473f-8a5a-6f5f997df860",
+		"name": "Alexandra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36793642"
+	},
+	"item": [
+		{
+			"name": "createProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n    \"name\": \"Exhaust valve\",\r\n    \"sku\": \"21010100701203\",\r\n    \"description\": \"Exhaust valve 2101-2107 (8v)\",\r\n    \"category\": \"ENGINE\",\r\n    \"price\": \"710\",\r\n    \"quantity\": \"8\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/products/2c07030a-3e98-4b54-8cd7-aca8671496f2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"products",
+						"2c07030a-3e98-4b54-8cd7-aca8671496f2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/products/2c07030a-3e98-4b54-8cd7-aca8671496f2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"products",
+						"2c07030a-3e98-4b54-8cd7-aca8671496f2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n    \"name\": \"Exhaust valve\",\r\n    \"sku\": \"21010100701203\",\r\n    \"description\": \"Exhaust valve 2101-2107 (8v)\",\r\n    \"category\": \"ENGINE\",\r\n    \"price\": \"850\",\r\n    \"quantity\": \"8\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/products/2c07030a-3e98-4b54-8cd7-aca8671496f2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"products",
+						"2c07030a-3e98-4b54-8cd7-aca8671496f2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
